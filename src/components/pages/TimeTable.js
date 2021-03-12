@@ -5,8 +5,8 @@ import Footer2 from '../Footer2';
 function TimeTable() {
   return (
     <>
-    <h1 className="timetable">Time Table</h1>
-    <img className="TimeTablePic" src="images/dance.png" alt="TimeTable" width="90%" />
+    <h1 className="timetable"><img className="TimeTablePic" src="images/dance.png" alt="TimeTable" width="90%" /></h1>
+    
     <Footer2 />
   </>
   );
