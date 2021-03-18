@@ -1,6 +1,9 @@
 
 Front of website for dance school in Oslo.
 
+
+
+
 This project was bootstrapped with Create React App. You have to install node and npm to start this project.
 
 You’ll need to have Node >= 10 on your local development machine.
