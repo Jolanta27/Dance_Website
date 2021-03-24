@@ -12,7 +12,7 @@ function Footer2 () {
                     DanceSkole<i class="fas fa-venus-mars" />
                 </Link>
             </div>
-            <small className="website-rights">DanseSkole<i class="far fa-copyright"></i> 2020 </small>
+            <small className="website-rights">DanseSkole<i class="far fa-copyright right_"></i> 2020 </small>
             <div className="social-icons">
                 <Link className="social-icon-link facebook" to="/" target="_blank" arial-label="Facebook"
                 >

@@ -43,8 +43,16 @@ render() {
                         <label htmlFor="kizomba">Kizomba</label>
                         </div>
                         <div>
-                        <input type="text" id="other" name="other" value="other" />
-                        <label htmlFor="other">Other</label>
+                        <input type="checkbox" id="chacha" name="chacha" value="chacha" />
+                        <label htmlFor="chacha">Cha-cha</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="mambo" name="mambo" value="mambo" />
+                        <label htmlFor="mambo">Mambo</label>
+                        </div>
+                        <div>
+                        <input type="checkbox" id="urbankiz" name="urbankiz" value="urbankiz" />
+                        <label htmlFor="urbankiz">Urban Kiz</label>
                         </div>
                     </div>
                     <div className="calendar">
