@@ -14,10 +14,5 @@
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-}
-
-.timetable, .contact, .signup {
   background-color: #CCCC05;
-  color: #fff;
-  font-size: 100px;
 }
