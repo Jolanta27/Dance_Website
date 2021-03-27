@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../App.css';
-import Footer2 from '../Footer2';
 import '../Contact.css';
 import Newsletter from '../Newsletter';
 
@@ -20,7 +19,7 @@ function Contact() {
       <Newsletter />
       </div>
      </div>
-    <Footer2 />
+
     </>
   );
 }

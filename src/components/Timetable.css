@@ -1,0 +1,36 @@
+.timetable {
+    display: block;
+}
+h1.welcome_ {
+    font-size: 45px;
+    padding-top: 80px;
+}
+img.TimeTablePic {
+    display: block;
+    margin: auto;
+}
+.info_schedule {
+    padding-top: 20px;
+}
+.timetable > p {
+    font-size: 30px;
+}
+.copy-rights {
+    background-color: #242424;
+    margin: 0;
+    padding: 20px 0;
+}
+@media screen and (max-width: 768px) {
+    .timetable {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1.welcome_ {
+        font-size: 30px;
+    }
+    
+    .timetable > p {
+        font-size: 25px;
+    }
+}
