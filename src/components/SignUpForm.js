@@ -19,8 +19,8 @@ render() {
                     </div>
                     <div className="phoneNumber">
                         <label htmlFor="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
-                        <small>Format: 123-456-7890</small>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" required/>
+                        <small>Format: 123-456-78</small>
                     </div>
                     <div className="gender">
                         <label htmlFor="female">Female</label>
@@ -30,6 +30,7 @@ render() {
                     </div>
                     <div className="typeOfDance">
                         <p>Type Of Dance:</p>
+                        <div className="dance_type">
                         <div>
                         <input type="checkbox" id="salsa" name="salsa" value="salsa"/>
                         <label htmlFor="salsa">Salsa</label>
@@ -42,6 +43,8 @@ render() {
                         <input type="checkbox" id="kizomba" name="kizomba" value="kizomba" />
                         <label htmlFor="kizomba">Kizomba</label>
                         </div>
+                        </div>
+                        <div className="dance_type">
                         <div>
                         <input type="checkbox" id="chacha" name="chacha" value="chacha" />
                         <label htmlFor="chacha">Cha-cha</label>
@@ -54,14 +57,11 @@ render() {
                         <input type="checkbox" id="urbankiz" name="urbankiz" value="urbankiz" />
                         <label htmlFor="urbankiz">Urban Kiz</label>
                         </div>
-                    </div>
-                    <div className="calendar">
-                        <label htmlFor="start">Start date:</label>
-                        <input type="date" id="start" name="dance-start" value="2021-04-01" min="2021-01-01" max="2021-12-31" />
+                        </div>
                     </div>
                     <div className="comments">
                         <label htmlFor="story">Comments:</label>
-                        <textarea id="story" name="story" rows="5" cols="33">Add more information if you want</textarea>
+                        <textarea id="story" name="story" rows="5" cols="33">Add when you would like to start and more information if you want</textarea>
                     </div>
                     <div className="submit">
                         <button>Sign Up</button>
