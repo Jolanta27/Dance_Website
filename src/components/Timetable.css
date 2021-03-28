@@ -3,15 +3,16 @@
 }
 h1.welcome_ {
     font-size: 45px;
-    padding-top: 80px;
+    padding-top: 70px;
 }
 img.TimeTablePic {
     display: block;
     margin: auto;
 }
 .info_schedule {
-    padding-top: 20px;
+    padding-top: 30px;
 }
+
 .timetable > p {
     font-size: 30px;
 }
@@ -29,8 +30,8 @@ img.TimeTablePic {
     h1.welcome_ {
         font-size: 30px;
     }
-
     .timetable > p {
         font-size: 25px;
     }
+
 }

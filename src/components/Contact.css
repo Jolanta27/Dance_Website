@@ -1,5 +1,6 @@
 .main_ {
-    background-color: #CCCC05;
+  background-color: #CCCC05;
+  height: 90vh;
 }
 .main1 {
     display: flex;

@@ -19,7 +19,9 @@ function Contact() {
       <Newsletter />
       </div>
      </div>
-
+     <div className="copy-rights">
+        <p>DanseSkole<i className="far fa-copyright"></i>2021</p>
+    </div>
     </>
   );
 }
