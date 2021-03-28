@@ -1,6 +1,27 @@
-form {
-    display: block;
+.newsletter_form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 8px 36px #222;
 }
 .newsletter_subscribe {
     text-align: center;
+    margin: 15px auto;
+}
+.newsletter_info {
+    font-size: 25px;
+}
+input[type="submit"] {
+    background-color: #CCCC05;;
+}
+@media screen and (max-width: 768px) {
+.newsletter_form {
+    width: 90%;
+}
+.newsletter_info{
+    font-size: 20px;
+}
 }

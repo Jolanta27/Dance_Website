@@ -1,17 +1,38 @@
 .main_ {
-  background-color: #CCCC05;
-  height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #CCCC05;
+    height: 90vh;
 }
 .main1 {
     display: flex;
+    align-items: center;
 }
 h1 {
-    color: black;
+    font-size: 40px;  
+}
+.contact_ {
     font-size: 30px;
-    display: block;
-    padding: 40px;
+    width: 120%;
+    margin: 100px;
 }
 i {
     font-size: 25px;
     padding-right: 5px;
+}
+@media screen and (max-width: 768px) {
+    .main1 {
+     flex-direction: column;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .contact_ {
+        font-size: 25px;
+    }
+    i {
+        font-size: 20px;
+    }
 }

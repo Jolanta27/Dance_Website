@@ -6,19 +6,20 @@ class Newsletter extends React.Component {
     }
     mySubmitHandler = (event) => {
         event.preventDefault();
-        alert("You are submitting");
+        alert("You are submitted");
     }
     render() {
         return (
-            <form onSubmit={this.mySubmitHandler}>
+            <form className="newsletter_form" onSubmit={this.mySubmitHandler}>
                 <h1 style={{fontSize: 40}}>Newsletter</h1>
-                <p>Stay up to date with dance news in Oslo with us</p>
-                <div class="newsletter_subscribe">
+                <p className="newsletter_info">Stay up to date with dance news in Oslo with us</p>
+                <div className="newsletter_subscribe">
                 <input 
                 type="email" placeholder="Your email address"/>
                 <input type="submit" value="subscribe"/>
                 </div>
-                <p>Your email is safe with us. We don't spam.</p>
+                <p className="newsletter_info">Your email is safe with us.</p> 
+                <p className="newsletter_info"> We don't spam.</p>
             </form>
         )
     }

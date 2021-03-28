@@ -10,7 +10,7 @@ function Contact() {
     <div className="main_">
     <h1>Feel free to drop by any of our studios to see what we are all about</h1>
     <div className="main1">
-      <div>
+      <div className="contact_">
       <p><i class="fas fa-map-marker"></i>Møllergata 6, 0179 Oslo</p>
       <p><i class="fas fa-map-marker"></i>Tollbugata 13, 0152 Oslo</p>
       <p><i class="fas fa-phone-alt"></i>+40101346</p>
