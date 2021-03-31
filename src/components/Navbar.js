@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-import { Button} from './Button';
+import {Button} from './Button';
 import './Navbar.css';
 
 function Navbar() {
@@ -23,7 +23,7 @@ function Navbar() {
           <nav className="navbar">
               <div className="navbar-container">
                   <Link to="/" className="navbar-logo">
-                      DanseSkole<i class="fas fa-venus-mars" />
+                      DanseSkole<i className="fas fa-venus-mars" />
                   </Link>
                   <div className="menu-icon" onClick={handleClick}>
                   <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>

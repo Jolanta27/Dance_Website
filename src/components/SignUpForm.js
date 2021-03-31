@@ -61,7 +61,7 @@ render() {
                     </div>
                     <div className="comments">
                         <label htmlFor="story">Comments:</label>
-                        <textarea id="story" name="story" rows="5" cols="33">Add when you would like to start and more information if you want</textarea>
+                        <textarea id="story" name="story" rows="5" cols="33" defaultValue="Add when you would like to start and more information if you want"></textarea>
                     </div>
                     <div className="submit">
                         <button>Sign Up</button>
