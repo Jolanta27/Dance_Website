@@ -1,5 +1,6 @@
 import React from 'react';
 import './Newsletter.css';
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 class Newsletter extends React.Component {
     constructor(props) {
     super(props);
@@ -17,6 +18,7 @@ class Newsletter extends React.Component {
                 <input 
                 type="email" placeholder="Your email address"/>
                 <input type="submit" value="subscribe"/>
+                <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
                 </div>
                 <p className="newsletter_info">Your email is safe with us.</p> 
                 <p className="newsletter_info"> We don't spam.</p>

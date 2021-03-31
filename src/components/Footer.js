@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from './Button';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 function Footer() {
     return (
@@ -13,19 +14,14 @@ function Footer() {
                 <div className="input-areas">
                     <form>
                         <input type="email" name="email" placeholder="Your Email Address" className="footer-input"/>
-                        <Button buttonStyle="btn-outline">Subscribe</Button>
+                        <Button buttonStyle="btn-outline">Subscribe
+                        <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
+                        </Button>
                     </form>
                 </div>
             </section>
             <div className="footer-links">
                 <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>About Us</h2>
-                        <Link to="/signup">How it works</Link>
-                        <Link to="/">Careers</Link>
-                        <Link to="/">Terms of Services</Link>
-                        <Link to="/">FAQ</Link>
-                    </div>
                     <div className="footer-link-items">
                         <h2>Contact Us</h2>
                         <Link to="/">+4740101346</Link>
@@ -38,11 +34,6 @@ function Footer() {
                         <Link to="/">Møllergata 6, 0179 Oslo</Link>
                         <Link to="/">Tollbugata 13, 0152 Oslo
                         </Link>
-                    </div>
-                    <div className="footer-link-items">
-                        <h2>Price</h2>
-                        <Link to="/">Individuals</Link>
-                        <Link to="/">Companies</Link>
                     </div>
                 </div>
             </div>

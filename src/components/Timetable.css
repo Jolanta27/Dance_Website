@@ -1,5 +1,6 @@
 .timetable {
     display: block;
+    height: 100vh;
 }
 h1.welcome_ {
     font-size: 45px;
@@ -19,8 +20,10 @@ p:first-of-type {
 }
 .copy-rights {
     background-color: #242424;
-    margin: 0; 
-    padding: 20px 0;
+    margin: 0;
+    height: 10vh;
+    
+    
 }
 @media screen and (max-width: 768px) {
     .timetable {
