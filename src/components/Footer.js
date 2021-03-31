@@ -1,8 +1,7 @@
 import React from 'react';
-import { Button } from './Button';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import Newsletter from './Newsletter';
 
 function Footer() {
     return (
@@ -12,12 +11,7 @@ function Footer() {
                 We pride ourselves in having the most highly trained and professional set of instructors always ready.
                 </p>
                 <div className="input-areas">
-                    <form>
-                        <input type="email" name="email" placeholder="Your Email Address" className="footer-input"/>
-                        <Button buttonStyle="btn-outline">Subscribe
-                        <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
-                        </Button>
-                    </form>
+                        <Newsletter/>
                 </div>
             </section>
             <div className="footer-links">
