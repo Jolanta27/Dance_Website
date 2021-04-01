@@ -3,6 +3,8 @@ import {axios, db } from '../.firebase/firebaseConfig';
 import './SignUpForm.css';
 
 
+
+
 const SignUpForm =  () => {
 const [formData, setFormData ] = useState({})
 
@@ -18,7 +20,9 @@ const handleSubmit = event => {
     setFormData({
         fullName: '',
         email: '',
-        massage: ''
+        phone: '',
+        gender: '',
+        message: ''
     })
 }
 const sendEmail = () => {
@@ -31,6 +35,8 @@ const sendEmail = () => {
         db.collection('emails').add({
             fullName: formData.fullName,
             email: formData.email,
+            phone: formData.phone,
+            gender: formData.gender,
             message: formData.message,
             time: new Date(),
         })   
@@ -51,18 +57,18 @@ const sendEmail = () => {
                     </div>
                     <div className="email">
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email" onChange={updateInput}value={formData.email || ''}/>
+                        <input type="email" name="email" onChange={updateInput} value={formData.email || ''}/>
                     </div>
                     <div className="phoneNumber">
                         <label htmlFor="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" required/>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" onChange={updateInput} value={formData.phone || ''}required/>
                         <small>Format: 123-456-78</small>
                     </div>
                     <div className="gender">
                         <label htmlFor="female">Female</label>
-                        <input type="radio" id="female" name="gender" value="female" />
+                        <input type="radio" id="female" name="gender" onChange={updateInput} value={formData.gender || ''} />
                         <label htmlFor="male">Male</label>
-                        <input type="radio" id="male" name="gender" value="male"/>
+                        <input type="radio" id="male" name="gender" onChange={updateInput} value={formData.gender || ''}/>
                     </div>
                     <div className="typeOfDance">
                         <p>Type Of Dance:</p>
