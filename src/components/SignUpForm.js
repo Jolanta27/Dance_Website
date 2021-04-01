@@ -1,21 +1,57 @@
-import React from 'react';
+import React, {useState }from 'react';
+import {axios, db } from '../.firebase/firebaseConfig';
 import './SignUpForm.css';
 
-export class SignUpForm extends React.Component {
-render() {
+
+const SignUpForm =  () => {
+const [formData, setFormData ] = useState({})
+
+const updateInput = e => {
+    setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+    })
+}
+const handleSubmit = event => {
+    event.preventDefault()
+    sendEmail()
+    setFormData({
+        fullName: '',
+        email: '',
+        massage: ''
+    })
+}
+const sendEmail = () => {
+    
+    axios.post(
+        process.env.REACT_APP_FIREBASE_DATABASE_URL,
+        formData
+    )
+    .then(res => {
+        db.collection('emails').add({
+            fullName: formData.fullName,
+            email: formData.email,
+            message: formData.message,
+            time: new Date(),
+        })   
+    })
+    .catch(error => {
+        console.log(error)
+    })
+}
     return (
         <div className="wrapper">
             <div className="form-wrapper">
                 <h2>Dance Registration Form</h2>
                 <p>Fill the registration form below keenly to enter the dancing competition.</p>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="fullName">
                         <label htmlFor="fullName">Full Name</label>
-                        <input type="text" name="fullName" />
+                        <input type="text" name="fullName" onChange={updateInput} value={formData.fullName || ''} />
                     </div>
                     <div className="email">
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email"/>
+                        <input type="email" name="email" onChange={updateInput}value={formData.email || ''}/>
                     </div>
                     <div className="phoneNumber">
                         <label htmlFor="phone">Phone Number</label>
@@ -61,7 +97,7 @@ render() {
                     </div>
                     <div className="comments">
                         <label htmlFor="story">Comments:</label>
-                        <textarea id="story" name="story" rows="5" cols="33" defaultValue="Add when you would like to start and more information if you want"></textarea>
+                        <textarea id="story" name="message" rows="5" cols="33"  onChange={updateInput} defaultValue={formData.message || ''}></textarea>
                     </div>
                     <div className="submit">
                         <button>Sign Up</button>
@@ -71,4 +107,4 @@ render() {
         </div>
     );
 }
-}
+export default SignUpForm;

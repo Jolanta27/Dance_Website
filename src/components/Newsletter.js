@@ -5,7 +5,7 @@ class Newsletter extends React.Component {
     
     mySubmitHandler = (event) => {
         event.preventDefault();
-        alert("You are submitted");
+        alert("Thank you for subscribing!");
     }
     render() {
         return (
