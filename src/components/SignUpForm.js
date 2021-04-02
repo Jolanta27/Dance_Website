@@ -1,80 +1,31 @@
-import React, {useState }from 'react';
-import {axios, db } from '../.firebase/firebaseConfig';
+
 import './SignUpForm.css';
 
 
 const SignUpForm =  () => {
-const [formData, setFormData ] = useState({})
 
-const updateInput = e => {
-    setFormData({
-        ...formData,
-        [e.target.name]: e.target.value,
-    })
-}
-const handleSubmit = event => {
-    event.preventDefault()
-    sendEmail()
-    setFormData({
-        fullName: '',
-        email: '',
-        phone: '',
-        gender: '',
-        message: ''
-    })
-}
-const sendEmail = () => {
-    
-    axios.post(
-        process.env.REACT_APP_FIREBASE_DATABASE_URL,
-        formData
-    )
-    .then(res => {
-        db.collection('emails').add({
-            fullName: formData.fullName,
-            email: formData.email,
-            phone: formData.phone,
-            gender: formData.gender,
-            message: formData.message,
-            time: new Date(),
-        })   
-    })
-    .catch(error => {
-        console.log(error)
-    })
-}
     return (
         <div className="wrapper">
             <div className="form-wrapper">
                 <h2>Dance Registration Form</h2>
                 <p>Fill the registration form below keenly to enter the dancing competition.</p>
-                <form onSubmit={handleSubmit}>
-                    <div className="fullName">
-                        <label htmlFor="fullName">Full Name</label>
-                        <input type="text" name="fullName" onChange={updateInput} value={formData.fullName || ''} />
-                    </div>
-                    <div className="email">
-                        <label htmlFor="email">Email</label>
-                        <input type="email" name="email" onChange={updateInput} value={formData.email || ''}/>
-                    </div>
-                    <div className="phoneNumber">
-                        <label htmlFor="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" onChange={updateInput} value={formData.phone || ''}required/>
+                <form>
+                        <label>Full Name</label>
+                        <input type="text" name="name" />
+                        <label>Email</label>
+                        <input type="email" name="email"/>
+                        <label>Phone Number</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" required/>
                         <small>Format: 123-456-78</small>
-                    </div>
-                    <div className="gender">
-                        <label htmlFor="female">Female</label>
-                        <input type="radio" id="female" name="gender" onChange={updateInput} value={formData.gender || ''} />
-                        <label htmlFor="male">Male</label>
-                        <input type="radio" id="male" name="gender" onChange={updateInput} value={formData.gender || ''}/>
-                    </div>
-                    <div className="comments">
-                        <label htmlFor="story">Comments:</label>
-                        <textarea id="story" name="message" rows="5" cols="33"  onChange={updateInput} defaultValue={formData.message || ''}></textarea>
-                    </div>
-                    <div className="submit">
-                        <button>Sign Up</button>
-                    </div>
+                        <div className="gender">
+                        <label >Female</label>
+                        <input type="radio" name="gender" />
+                        <label>Male</label>
+                        <input type="radio" name="gender"/>
+                        </div>
+                        <label>Comments:</label>
+                        <textarea id="story" name="message" rows="5" cols="33"></textarea>
+                        <input type="submit"  value="Sign Up" className="submit" />
                 </form>
             </div>
         </div>
