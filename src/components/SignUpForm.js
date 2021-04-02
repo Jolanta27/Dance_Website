@@ -68,37 +68,6 @@ const sendEmail = () => {
                         <label htmlFor="male">Male</label>
                         <input type="radio" id="male" name="gender" onChange={updateInput} value={formData.gender || ''}/>
                     </div>
-                    <div className="typeOfDance">
-                        <p>Type Of Dance:</p>
-                        <div className="dance_type">
-                        <div>
-                        <input type="checkbox" id="salsa" name="salsa" value="salsa"/>
-                        <label htmlFor="salsa">Salsa</label>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="bachata" name="bachata" value="bachata" />
-                        <label htmlFor="bachata">Bachata</label>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="kizomba" name="kizomba" value="kizomba" />
-                        <label htmlFor="kizomba">Kizomba</label>
-                        </div>
-                        </div>
-                        <div className="dance_type">
-                        <div>
-                        <input type="checkbox" id="chacha" name="chacha" value="chacha" />
-                        <label htmlFor="chacha">Cha-cha</label>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="mambo" name="mambo" value="mambo" />
-                        <label htmlFor="mambo">Mambo</label>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="urbankiz" name="urbankiz" value="urbankiz" />
-                        <label htmlFor="urbankiz">Urban Kiz</label>
-                        </div>
-                        </div>
-                    </div>
                     <div className="comments">
                         <label htmlFor="story">Comments:</label>
                         <textarea id="story" name="message" rows="5" cols="33"  onChange={updateInput} defaultValue={formData.message || ''}></textarea>

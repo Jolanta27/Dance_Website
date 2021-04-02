@@ -54,15 +54,6 @@ input[type="radio"] {
   display: inline-block;
   margin-right: 50px;
 }
-.typeOfDance > p, .comments {
-  font-size: 25px;
-}
-.dance_type {
-  display: flex;
-justify-content: space-around;
-padding: 10px 5px 5px 5px;
-  
-}
 .comments {
   text-align: center;
 }
@@ -85,7 +76,7 @@ button:hover {
   background-color: black;
   color: white;
 }
-.fullName, .email, .phoneNumber, .typeOfDance, .comments {
+.fullName, .email, .phoneNumber, .comments {
   display: flex;
   flex-direction: column;
   margin-bottom:15px;
@@ -101,8 +92,5 @@ button:hover {
   .form-wrapper > p {
     font-size: 20px;
     padding: 5px 0;
-  }
-  .typeOfDance > p, .comments {
-    font-size: 20px;
   }
 }
