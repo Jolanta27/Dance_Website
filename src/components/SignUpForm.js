@@ -3,8 +3,6 @@ import {axios, db } from '../.firebase/firebaseConfig';
 import './SignUpForm.css';
 
 
-
-
 const SignUpForm =  () => {
 const [formData, setFormData ] = useState({})
 
