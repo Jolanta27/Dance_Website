@@ -10,11 +10,9 @@ class Newsletter extends React.Component {
     render() {
         return (
             <form className="newsletter_form" onSubmit={this.mySubmitHandler}>
-                <h1 style={{fontSize: 40}}>Newsletter</h1>
+                <h1 style={{fontSize: 40, paddingTop: '10px'}}>Newsletter</h1>
                 <p className="newsletter_info">Stay up to date with dance news in Oslo with us</p>
-                <div className="newsletter_subscribe">
                 <MailchimpSubscribe value="subscribe" url={process.env.REACT_APP_MAILCHIMP_URL} />
-                </div>
                 <p className="newsletter_info">Your email is safe with us.</p> 
                 <p className="newsletter_info"> We don't spam.</p>
             </form>

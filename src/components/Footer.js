@@ -1,18 +1,15 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import Newsletter from './Newsletter';
 
 function Footer() {
     return (
+       
         <div className="footer-container">
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
                 We pride ourselves in having the most highly trained and professional set of instructors always ready.
-                </p>
-                <div className="input-areas">
-                        <Newsletter/>
-                </div>
+                </p>            
             </section>
             <div className="footer-links">
                 <div className="footer-link-wrapper">
