@@ -6,11 +6,13 @@ import TimeTable from './components/pages/TimeTable';
 import Contact from './components/pages/Contact';
 import SignUp from './components/pages/Signup';
 import './App.css';
+import DocumentTitle from 'react-document-title';
 
 
 function App() {
   return (
     <>
+    <DocumentTitle title="Danse Skole">
     <Router>
       <Navbar/>
       <Switch>
@@ -20,6 +22,7 @@ function App() {
 <Route path="/signup" component={SignUp} />
       </Switch>
       </Router>
+      </DocumentTitle>
     </>
   );
 }
