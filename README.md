@@ -1,4 +1,4 @@
-You can find my project on https://danse-skole.web.app/
+You can find my project on https://danse-skole.web.app/. Mobile version is in rebuilding.
 
 This project was bootstrapped with Create React App. You have to install node and npm to start this project.
 
