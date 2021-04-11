@@ -27,10 +27,11 @@ i {
      flex-direction: column;
     }
     h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .contact_ {
-        font-size: 25px;
+        font-size: 20px;
+        margin: 30px;
     }
     i {
         font-size: 20px;
