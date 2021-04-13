@@ -1,38 +1,44 @@
-.main_ {
+.main, .main1 {
     display: flex;
     align-items: center;
+}
+
+.main {
     justify-content: center;
     flex-direction: column;
     background-color: #CCCC05;
     height: 90vh;
 }
-.main1 {
-    display: flex;
-    align-items: center;
-}
+
 h1 {
     font-size: 40px;  
 }
-.contact_ {
+
+.contact-form {
     font-size: 30px;
     width: 120%;
     margin: 100px;
 }
+
 i {
     font-size: 25px;
     padding-right: 5px;
 }
+
 @media screen and (max-width: 768px) {
     .main1 {
      flex-direction: column;
     }
+
     h1 {
         font-size: 25px;
     }
-    .contact_ {
+
+    .contact {
         font-size: 20px;
         margin: 30px;
     }
+    
     i {
         font-size: 20px;
     }

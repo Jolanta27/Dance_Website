@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const instance = axios.create(
+const instance = axios.create (
     {
         baseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
         withCredentials: false,
@@ -9,5 +9,5 @@ const instance = axios.create(
             'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS',
         }
     }
-    );
-    export default instance;
+);
+export default instance;

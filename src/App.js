@@ -9,22 +9,22 @@ import './App.css';
 import DocumentTitle from 'react-document-title';
 
 
-function App() {
-  return (
-    <>
-    <DocumentTitle title="Danse Skole">
-    <Router>
-      <Navbar/>
-      <Switch>
-<Route path="/" exact component={Home}/>
-<Route path="/timetable" component={TimeTable} />
-<Route path="/contact" component={Contact} />
-<Route path="/signup" component={SignUp} />
-      </Switch>
-      </Router>
+  function App() {
+    return (
+      <>
+      <DocumentTitle title="Danse Skole">
+        <Router>
+          <Navbar/>
+            <Switch>
+              <Route path="/" exact component={Home}/>
+              <Route path="/timetable" component={TimeTable} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/signup" component={SignUp} />
+            </Switch>
+        </Router>
       </DocumentTitle>
-    </>
-  );
-}
+      </>
+    );
+  }
 
-export default App;
+  export default App;

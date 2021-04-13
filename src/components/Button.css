@@ -1,7 +1,7 @@
 :root {
-    --primary: #fff;
-    
+    --primary: #fff;  
 }
+
 .btn{
     padding: 8px 20px;
     border-radius: 2px;
@@ -9,6 +9,7 @@
     border: none;
     cursor: pointer;
 }
+
 .btn--primary {
     background-color: var(--primary);
     color: #242424;
@@ -21,8 +22,8 @@
     padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
- 
 }
+
 .btn--medium {
     padding: 8px 20px;
     font-size: 20px;
@@ -32,6 +33,7 @@
     padding: 12px 30px;
     font-size: 25px;
 }
+
 .btn--medium:hover, .btn--large:hover {
     background: white;
     color: #242424;

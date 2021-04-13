@@ -2,15 +2,18 @@
     display: block;
     height: 100vh;
 }
-h1.welcome_ {
+
+h1.welcome {
     font-size: 45px;
     padding-top: 70px;
     padding-bottom: 40px;
 }
-img.TimeTablePic {
+
+img.pic {
     display: block;
     margin: auto;
 }
+
 p:first-of-type {
     padding-top: 30px;
 }
@@ -18,27 +21,29 @@ p:first-of-type {
 .timetable > p {
     font-size: 30px;
 }
+
 .copy-rights {
     background-color: #242424;
     margin: 0;
-    height: 10vh;
-    
-    
+    height: 10vh;      
 }
+
 @media screen and (max-width: 768px) {
     .timetable {
         padding-top: 10%;
     }
-    h1.welcome_ {
+
+    h1.welcome {
         font-size: 30px;
     }
-    img.TimeTablePic {
+
+    img.pic {
         padding-top: 40px;
         padding-bottom: 60px;
     }
+
     .timetable > p {
         font-size: 25px;
         padding: 5px;
     }
-
 }
