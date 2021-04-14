@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import  { Button }  from './Button';
-import './FirstSection.css';
+import './styles/FirstSection.css';
 
 function FirstSection() {
   return (

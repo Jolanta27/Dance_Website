@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import '../Contact.css';
+import '../styles/Contact.css';
 import Newsletter from '../Newsletter';
 
 

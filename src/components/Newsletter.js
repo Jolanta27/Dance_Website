@@ -1,5 +1,5 @@
 import React from 'react';
-import './Newsletter.css';
+import './styles/Newsletter.css';
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 class Newsletter extends React.Component {
     constructor(props) {
