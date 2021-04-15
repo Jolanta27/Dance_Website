@@ -9,10 +9,5 @@
 .timetable,
 .contact,
 .signup {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
   background-color: #CCCC05;
 }
