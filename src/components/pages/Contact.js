@@ -8,7 +8,7 @@ import Newsletter from '../Newsletter';
     return (
       <>
         <div className="main">
-          <h1>Feel free to drop by any of our studios to see what we are all about</h1>
+          <h1 className="welcome">Feel free to drop by any of our studios to see what we are all about</h1>
             <div className="main1">
               <div className="contact-form">
                 <p><i className="fas fa-map-marker"></i>Møllergata 6, 0179 Oslo</p>
@@ -18,10 +18,10 @@ import Newsletter from '../Newsletter';
               </div>
               <Newsletter />
             </div>
-        </div>
-        <div className="copy-rights">
-            <p>DanseSkole<i className="far fa-copyright"></i>2021</p>
-        </div>
+            <footer className="footer">
+              <p className="copy-right__footer">DanseSkole<i className="far fa-copyright"></i>2021</p>
+            </footer>
+        </div> 
       </>
     );
   }

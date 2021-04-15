@@ -1,7 +1,6 @@
 .timetable {
-    display: flex;
-    flex-direction: column;
-   
+    position: relative; 
+    min-height: 100%;
 }
 
 h1.welcome {
@@ -17,19 +16,16 @@ img.pic {
 .timetable > p {
     font-size: 25px;
 }
-
-.copy-rights {
-    background-color: #242424;
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #222;
     width: 100%;
-    font-size: 25px;
-    margin-bottom: 0;    
+    color: white;
 }
 
 @media screen and (max-width: 768px) {
-    .timetable {
-        padding-top: 10px;
-    }
-
+  
     h1.welcome {
         font-size: 30px;
     }
@@ -42,7 +38,7 @@ img.pic {
         font-size: 25px;
         padding: 5px;
     }
-    .copy-rights {
+    .footer {
         font-size: 20px;
     }
 }

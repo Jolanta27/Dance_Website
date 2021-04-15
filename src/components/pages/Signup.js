@@ -6,9 +6,9 @@ function SignUp() {
   return (
     <>
     <SignUpForm />
-      <div className="copy-rights">
-          <p>DanseSkole<i className="far fa-copyright"></i>2021</p>
-      </div>
+            <footer className="footer">
+              <p className="copy-right__footer">DanseSkole<i className="far fa-copyright"></i>2021</p>
+            </footer>
     </>
   );
 }
