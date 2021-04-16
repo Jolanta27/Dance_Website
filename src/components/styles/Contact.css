@@ -1,19 +1,21 @@
 .main{
-    position: relative;
+    display: inline-block;
     background-color: #CCCC05;
-    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
 }
+
 .main1 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-top: 20px;
 }
 
 .contact-form {
     font-size: 30px;
     width: 100%;
-    margin: 100px;
 }
+
 .newsletter_form {
     margin-right: 50px;
 }
@@ -23,21 +25,27 @@ i {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
+   display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
-    
-    .main1 {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
+    .main {
+        padding-top: 0;
     }
-    i {
-       font-size: 20px;
-   }
-   .newsletter_form {
-    margin-right: 0;
-}
+    h1.welcome {
+        margin-bottom: -35px;
+    }
+    .main1 {
+      flex-direction: column;
+      
+    }
+    .contact-form p:last-child {
+        padding-bottom: 10px;
+    }
+    p, i {
+        font-size: 20px;
+    }
+    .newsletter_form {
+        margin-right: 0;
+    }
 }
