@@ -14,4 +14,5 @@ In the project directory, you can run:
 
 npm start
 
+![Screenshot](https://user-images.githubusercontent.com/53143114/116794494-9df48f00-aacd-11eb-89bf-483ba5fef795.gif)
 
